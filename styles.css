@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    grid-template-columns: 1fr 4fr;
+    gap: 4px;
+}
+
+.container div {
+    display: grid;
+    text-align: center;
+    padding: 15px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px
+}
+
+.header {
+    position: relative;
+    height: 100px;
+    background-color: #393f4d;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header .logo {
+    text-align: left;
+    align-items: center;
+    }
+
+.menu {
+    position: absolute;
+    top: 45%;
+    right: 50px;
+    transform: translateY(-50%); 
+}
+
+.menu li {
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 15px; 
+}
+
+.sidebar {
+    position: relative;
+    height: 800px;
+    width: 250px;
+    background-color: #C50208;
+    gap: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar .photo {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sidebar .side-concent {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 0;
+}
+
+.nav {
+    position:absolute;
+    background-color: #C50208;
+    top: 105px;
+    right: 0;
+    height: 25px;
+    width: 1233px;
+}
+
+.nav li {
+    position: relative;
+    right: 250px;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 295px; 
+}
+
+.article {
+    position: absolute;
+    background-color: #bccbde;
+    top: 165px;
+    right: 0;
+    height: 740px;
+    width: 1263px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.article .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article p.title {
+    font-size: 18px; 
+    font-family: sans-serif; 
+    color: black; 
+    margin: 0; 
+    padding: 10px; 
+}
+
+.article p {
+    font-size: 14px;
+    font-family: sans-serif; 
+    color: black;
+    margin: 0; 
+    padding: 10px; 
+}
+
+.footer {
+    background-color: #393f4d;
+    width: 100%
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 100;
+}
